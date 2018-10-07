@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    120deg,
+    rgba(164, 240, 235, 0.1) 0%,
+    rgba(33, 80, 77, 0.1) 100%
+  );
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.card {
+  width: 460px;
+  height: auto;
+  border: 3px solid rgba(33, 80, 77, 1);
+  background: white;
+  border-radius: 5px;
+  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(bg.jpg);
+  background-size: cover;
+  font-family: "Kalam", cursive;
+}
+
+.card-header {
+  text-align: center;
+  background-color: rgba(33, 80, 77);
+  border-bottom: 3px solid rgba(33, 80, 77, 1);
+  color: white;
+  letter-spacing: 5px;
+  margin-bottom: 3px;
+}
+
+.card-body {
+  margin: 0 auto;
+}
+
+.inputs {
+  text-align: center;
+  width: 100%;
+}
+
+input {
+  width: 420px;
+  height: 20px;
+}
+
+button {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  width: 100%;
+  color: rgba(33, 80, 77, 1);
+  padding-left: 70px;
+  transition: all 0.5s ease;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: rgba(124, 167, 163, 0.2);
+}
+
+.done {
+  text-decoration: line-through;
+  background-color: rgba(82, 171, 164, 0.6);
+  opacity: 0.8;
+  /* color: red; */
+}
+
+.tasks {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+.tasks span {
+  font-size: 70%;
+  background-color: orange;
+  padding: 2px;
+}
+
+p {
+  opacity: 0.6;
+  margin-left: 15px;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  font-size: 60%;
+}
+
+.hide {
+  display: none;
+}
