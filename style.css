@@ -18,12 +18,14 @@ body {
       rgba(62, 20, 20, 0.4)
     ),
     url(back.jpeg);
+    background-size: cover;
+  background-repeat: no-repeat;
   font-family: sans-serif;
   font-size: 28px;
 }
 
 .card {
-  width: 70%;
+  width: 100%;
   height: auto;
   border: 3px solid rgba(33, 80, 77, 1);
   background: white;
@@ -33,9 +35,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*background-image: url(bg.jpg);*/
+  background-image: url(bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   font-family: "Kalam", cursive;
 }
 
@@ -136,8 +139,8 @@ p {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     .card {
-        width: 100%;
+        width: 70%;
     }
 }
