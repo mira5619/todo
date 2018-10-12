@@ -4,6 +4,8 @@ var list = document.querySelector("ul");
 var badge = document.querySelector(".badge");
 
 var tasks = 2;
+document.querySelector('p>span').textContent =new Date().toLocaleString();
+//document.querySelector('p').style.textDecoration ='underline';
 
 btn.addEventListener("click", function(e) {
   if (input.value === "") {
