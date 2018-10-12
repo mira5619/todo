@@ -20,6 +20,7 @@ btn.addEventListener("click", function(e) {
 list.addEventListener("click", function(e) {
   e.target.classList.toggle("done");
   e.target.firstElementChild.classList.toggle("hide");
+  //e.target.style.listStyleType ="none";
 });
 
 list.addEventListener("dblclick", function(e) {
