@@ -58,25 +58,40 @@ h2 {
 .inputs {
   text-align: center;
   width: 100%;
+  display: flex;
+  justify-content: center;
 
 
 }
 
 input {
   width: 80%;
-  height: 30px;
+  height: 40px;
   border: 1px solid black;
   font-size: inherit;
 }
 
-button {
-  height: 30px;
-  width: 30px;
-  vertical-align: middle;
-  font-size: inherit;
+.add {
+  height: 40px;
+  width: 40px;
+  /*vertical-align: baseline;*/
+  font-size: 20px;
   border: 1px solid black;
-  line-height: 30px;
+  /*line-height: 30px;*/
   /*border-radius: 50%;*/
+}
+.reset {
+  height: 40px;
+  width: 70px;
+  font-size: 20px;
+  /*line-height: 30px;*/
+  background-color: white;
+  /*vertical-align: baseline;*/
+  font-family: "Kalam", cursive;
+
+}
+button {
+  background-color: white;
 }
 
 button:hover {
