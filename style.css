@@ -92,7 +92,6 @@ input {
 }
 button {
   background-color: white;
-  /*text-transform: uppercase;*/
 }
 
 button:hover {

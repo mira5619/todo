@@ -2,7 +2,8 @@ var input = document.querySelector("input");
 var btn = document.querySelector("button");
 var list = document.querySelector("ul");
 var badge = document.querySelector(".badge");
-
+var items = document.querySelectorAll("li");
+console.log(items);
 
 var tasks = 0;
 document.querySelector('p>span').textContent =new Date().toLocaleString();
@@ -14,8 +15,6 @@ btn.addEventListener("click", function(e) {
   } else {
     list.innerHTML +=
       "<li><img class='hide' src='check.png'>" + input.value + "</li>";
-
-
     input.value = "";
     tasks += 1;
     badge.innerHTML = tasks;
@@ -27,17 +26,12 @@ list.addEventListener("click", function(e) {
   e.target.firstElementChild.classList.toggle("hide");
   //e.target.style.listStyleType ="none";
   //list.removeChild(e.target);
-
-
+  items.forEach(function(item, index){
+    console.log(index);
+  });
   tasks -= 1;
    badge.innerHTML = tasks;
 });
-
-var items = document.querySelectorAll("li");
-      console.log(items);
-      items.forEach(function(item, index){
-          console.log(index);
-      });
 
 // list.addEventListener("dblclick", function(e) {
 //   list.removeChild(e.target);
