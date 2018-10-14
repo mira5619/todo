@@ -18,8 +18,8 @@ body {
 h2 {
   padding: 0;
   margin: 0;
-
 }
+
 .card {
   width: 100%;
   height: auto;
@@ -36,7 +36,6 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Kalam", cursive;
-
 }
 
 .card-header {
@@ -60,8 +59,6 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: center;
-
-
 }
 
 input {
@@ -74,29 +71,24 @@ input {
 .add {
   height: 40px;
   width: 40px;
-  /*vertical-align: baseline;*/
   font-size: 20px;
   border: 1px solid black;
-  /*line-height: 30px;*/
-  /*border-radius: 50%;*/
 }
+
 .reset {
   height: 40px;
   width: 70px;
   font-size: 20px;
-  /*line-height: 30px;*/
   background-color: white;
-  /*vertical-align: baseline;*/
   font-family: "Kalam", cursive;
-
 }
+
 button {
   background-color: white;
 }
 
 button:hover {
-  background-color: #eb4d4d;
-
+  background-color: orange;
 }
 
 ul {
@@ -117,18 +109,6 @@ li:hover {
   background-color: rgba(124, 167, 163, 0.2);
 }
 
-/*li::before {
-  content: "\2022";
-  font-size: 67px;
-  position: absolute;
-  color: #eb4d4d;
-  top: -59%;
-  left: 15%;
-}
-li.done::before {
-  content: '';
-}*/
-
 .done {
   text-decoration: line-through;
   background-color: rgba(82, 171, 164, 0.6);
@@ -146,7 +126,7 @@ li.done::before {
 
 .tasks span {
   font-size: 70%;
-  background-color: #eb4d4d;
+  background-color: orange;
   padding: 2px;
 }
 
@@ -159,26 +139,22 @@ p {
 }
 
 .date {
-  /*text-decoration: underline;*/
   text-transform: uppercase;
   padding: 0;
 }
-
 
 .hide {
   display: none;
 }
 
-
 @media only screen and (min-width: 600px) {
   body {
     font-size: 28px;
   }
-    .card {
-        width: 70%;
-    }
-
-    input {
-  width: 70%;
-}
+  .card {
+    width: 70%;
+  }
+  input {
+    width: 70%;
+  }
 }
