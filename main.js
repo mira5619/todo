@@ -21,10 +21,12 @@ btn.addEventListener("click", function(e) {
 list.addEventListener("click", function(e) {
   e.target.classList.toggle("done");
   e.target.firstElementChild.classList.toggle("hide");
+  countDeleted();
+});
 
-  var items = document.querySelectorAll(".hide");
-  tasks = items.length;
-  badge.innerHTML = tasks;
+list.addEventListener("dblclick", function(e) {
+  list.removeChild(e.target);
+  countDeleted();
 });
 
 var resetBtn = document.querySelector(".reset");
@@ -32,4 +34,10 @@ resetBtn.addEventListener("click", reset);
 
 function reset() {
   location.reload();
+}
+
+function countDeleted() {
+  var items = document.querySelectorAll(".hide");
+  tasks = items.length;
+  badge.innerHTML = tasks;
 }
