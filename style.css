@@ -13,52 +13,60 @@ body {
   background-repeat: no-repeat;
   font-family: sans-serif;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-h2 {
-  padding: 0;
-  margin: 0;
+h1 {
+  padding-top: 10px;
+  /* margin-top: 1rem; */
+  font-size: 1.7rem;
 }
 
 .card {
   width: 100%;
-  height: auto;
+  max-height: 100vh;
+  overflow: auto;
   border: 3px solid rgba(33, 80, 77, 1);
-  background: white;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url(bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   font-family: "Kalam", cursive;
+  margin-top: 20px;
 }
 
 .card-header {
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: rgba(33, 80, 77, 1);
+  background-color: rgba(33, 80, 77, 0.7);
   border-bottom: 3px solid rgba(33, 80, 77, 1);
   color: white;
   letter-spacing: 5px;
   text-transform: uppercase;
-  /*margin-bottom: 3px;*/
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-body {
   margin: 0 auto;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .inputs {
   text-align: center;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 input {
@@ -66,6 +74,7 @@ input {
   height: 40px;
   border: 1px solid black;
   font-size: inherit;
+  cursor: pointer;
 }
 
 .add {
@@ -73,6 +82,11 @@ input {
   width: 40px;
   font-size: 20px;
   border: 1px solid black;
+  background: orange;
+}
+
+.add:hover {
+  background: rgb(255, 140, 0);
 }
 
 .reset {
@@ -85,6 +99,7 @@ input {
 
 button {
   background-color: white;
+  cursor: pointer;
 }
 
 button:hover {
@@ -111,6 +126,7 @@ li:hover {
 
 .done {
   text-decoration: line-through;
+  text-decoration-color: red;
   background-color: rgba(82, 171, 164, 0.6);
   opacity: 0.8;
   list-style-type: none;
@@ -120,21 +136,16 @@ li:hover {
   display: flex;
   justify-content: flex-end;
   padding-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .tasks span {
   font-size: 70%;
   background-color: orange;
-  padding: 2px;
 }
 
 p {
   opacity: 0.6;
   margin-left: 3rem;
-  padding-top: 3px;
-  padding-bottom: 10px;
   font-size: 70%;
 }
 
@@ -154,7 +165,7 @@ p {
   .card {
     width: 70%;
   }
-  input {
+  .inputs {
     width: 70%;
   }
 }

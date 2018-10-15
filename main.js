@@ -15,16 +15,12 @@ btn.addEventListener("click", function(e) {
     input.value = "";
     tasks += 1;
     badge.innerHTML = tasks;
-    var items = document.querySelectorAll("li");
-    console.log(items);
   }
 });
 
 list.addEventListener("click", function(e) {
   e.target.classList.toggle("done");
   e.target.firstElementChild.classList.toggle("hide");
-  //e.target.style.listStyleType ="none";
-  //list.removeChild(e.target);
 
   var items = document.querySelectorAll(".hide");
   tasks = items.length;
