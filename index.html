@@ -34,6 +34,20 @@
         <button class="reset" type="button">reset</button>
     </div>
     <!-- <p class="note">* click to mark item as done; ** double click to delete item</p> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- https://www.youtube.com/watch?v=bmKDfRId4gk
+        https://github.com/sirxemic/jquery.ripples -->
+    <script src="jquery.ripples-min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('body').ripples({
+                dropRadius: 20,
+                perturbance: 0.03
+            });
+
+        });
+    </script>
     <script src="main.js"></script>
 </body>
 
